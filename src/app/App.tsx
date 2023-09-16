@@ -48,8 +48,8 @@ function App() {
         a.click();
     }
     return (
-        <Stack width='630px'
-               height='900px'
+        <Stack width='100vw'
+               height='100vh'
                overflow='hidden'
                direction='row'
                id='app-stack'
@@ -68,8 +68,8 @@ function App() {
                     justifyContent='center'
                     display='flex'>
                     <Avatar sx={{
-                        width: '150px',
-                        height: '150px',
+                        width: '25vw',
+                        height: '25vw',
                         boxShadow: '0 4px 8px rgba(177 247 255 / 80%)'
                     }}
                             onClick={saveToPdf}

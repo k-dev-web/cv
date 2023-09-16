@@ -90,12 +90,7 @@ export const theme = createTheme({
         },
         MuiAvatar: {
             styleOverrides: {
-                root: {
-                    img: {
-                        width: '150px',
-                        height: '150px'
-                    }
-                },
+                root: {},
             },
         }
 
