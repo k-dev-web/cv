@@ -3,50 +3,10 @@ import {Avatar, Box, Stack, TextField, Typography} from "@mui/material";
 import avatar from '../assets/images/avatar3.png'
 import {useData} from "./hooks/useData";
 
-import JsPDF from "jspdf";
-import html2canvas from "html2canvas";
 
-const htmlStringToPdf = async (htmlString: any) => {
-    let iframe = document.createElement("iframe");
-    iframe.style.visibility = "hidden";
-    document.body.appendChild(iframe);
-    let iframedoc = iframe.contentDocument || iframe.contentWindow?.document;
-    // @ts-ignore
-    iframedoc.body.innerHTML = htmlString;
-
-    // @ts-ignore
-    let canvas = await html2canvas(htmlString, {});
-
-    // Convert the iframe into a PNG image using canvas.
-    let imgData = canvas.toDataURL("image/png");
-    console.log(imgData)
-    // Create a PDF document and add the image as a page.
-    const doc = new JsPDF();
-    doc.addImage(imgData, "PNG", 0, 0, 210, 297);
-    console.log(doc)
-    // Get the file as blob output.
-    let blob = doc.output("blob");
-    console.log(blob)
-    // Remove the iframe from the document when the file is generated.
-    document.body.removeChild(iframe);
-    return blob;
-};
-
-
-function App() {
+export function App() {
     const user = useData().userValues;
-    const saveToPdf = async () => {
-        const html = document.getElementById('app-stack');
-        console.log(html)
-        const pdf = await htmlStringToPdf(html);
-        const a = document.createElement('a');
-        a.download = 'my-file.pdf';
-        a.href = URL.createObjectURL(pdf);
-        a.addEventListener('click', (e) => {
-            setTimeout(() => URL.revokeObjectURL(a.href), 30 * 1000);
-        });
-        a.click();
-    }
+
     return (
         <Stack width='100%'
                height='1000vh'
@@ -72,7 +32,6 @@ function App() {
                         height: '25vw',
                         boxShadow: '0 4px 8px rgba(177 247 255 / 80%)'
                     }}
-                            onClick={saveToPdf}
                             src={avatar}
                     />
                 </Box>
@@ -231,4 +190,4 @@ function App() {
     );
 }
 
-export default App;
+
