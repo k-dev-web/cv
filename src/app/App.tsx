@@ -48,9 +48,9 @@ function App() {
         a.click();
     }
     return (
-        <Stack width='100vw'
-               height='100vh'
-               overflow='hidden'
+        <Stack width='100%'
+               height='1000vh'
+
                direction='row'
                id='app-stack'
                border='2px black'
