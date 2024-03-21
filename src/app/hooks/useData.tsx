@@ -91,6 +91,11 @@ const userValues: TUser = {
             description: 'Sales Assistent. Seller of non-food products. Acceptance, maintenance and' +
                 'arrangement of the products according to the planning schedule. Working' +
                 'with buyers.'
+        },
+        {
+            date: '33333333',
+            nameOrganization: 'lorem ipsum',
+            description: ''
         }
     ]
 };
