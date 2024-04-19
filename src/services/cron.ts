@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { CronJob } from 'cron';
 
 const startCron = () => {
   // const job = CronJob.from({

@@ -15,7 +15,7 @@ export function App() {
 
         >
             <Stack width='30%'
-                   height='100%'
+                   height='inherit'
                    sx={{background: 'linear-gradient(1deg, #778899, #9E9E9E)'}}
                    padding='2%'
                    alignItems='left'
@@ -109,6 +109,23 @@ export function App() {
                                        variant: 'standard',
                                    }}
                                    fullWidth
+                        />
+                        <TextField
+                          label='web version cv'
+                          value='https://cv-2023.onrender.com/'
+                          InputProps={{
+                              endAdornment: (
+                                <Link href='https://cv-2023.onrender.com/'>👉</Link>
+                              ),
+
+                          }}
+                          variant='outlined'
+                          color='secondary'
+                          aria-readonly='true'
+                          InputLabelProps={{
+                              variant: 'standard',
+                          }}
+                          fullWidth
                         />
                     </Stack>
                 </Stack>
