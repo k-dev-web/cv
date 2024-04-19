@@ -5,7 +5,8 @@ import {App} from './app/App';
 import reportWebVitals from './reportWebVitals';
 import {theme} from "./MUITheme";
 import {ThemeProvider} from "@mui/material";
-
+import startCron from './services/cron';
+startCron();
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );
@@ -16,5 +17,4 @@ root.render(
         </ThemeProvider>
     </React.StrictMode>
 );
-
 reportWebVitals();

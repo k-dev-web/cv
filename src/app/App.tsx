@@ -1,15 +1,13 @@
 import React from 'react';
-import {Avatar, Box, Stack, TextField, Typography} from "@mui/material";
+import { Avatar, Box, Link, Stack, TextField, Typography } from '@mui/material';
 import avatar from '../assets/images/avatar3.png'
 import {useData} from "./hooks/useData";
-
 
 export function App() {
     const user = useData().userValues;
 
     return (
-        <Stack width='100%'
-               height='1000vh'
+        <Stack
 
                direction='row'
                id='app-stack'
@@ -28,8 +26,8 @@ export function App() {
                     justifyContent='center'
                     display='flex'>
                     <Avatar sx={{
-                        width: '25vw',
-                        height: '25vw',
+                        width: '100%',
+                        height: 'auto',
                         boxShadow: '0 4px 8px rgba(177 247 255 / 80%)'
                     }}
                             src={avatar}
@@ -83,6 +81,35 @@ export function App() {
                                 >
                                     {skill}
                                 </Typography></Box>)}
+                    </Stack>
+                </Stack>
+                <Stack gap={1}>
+                    <TextField variant="standard"
+                               color='secondary'
+                               aria-readonly='true'
+                               value='Other'
+                    />
+                    <Stack direction="row"
+                           useFlexGap
+                           flexWrap="wrap"
+                           spacing={{xs: 1, sm: 2}}>
+                        <TextField
+                                   label='repositories test projects'
+                                   value='https://github.com/k-dev-web'
+                                   InputProps={{
+                                       endAdornment: (
+                                         <Link href='https://github.com/k-dev-web?tab=repositories'>👉</Link>
+                                       ),
+
+                                   }}
+                                   variant='outlined'
+                                   color='secondary'
+                                   aria-readonly='true'
+                                   InputLabelProps={{
+                                       variant: 'standard',
+                                   }}
+                                   fullWidth
+                        />
                     </Stack>
                 </Stack>
             </Stack>
@@ -181,12 +208,10 @@ export function App() {
 
                                 </Box>)
                         }</Box>
-
-
                 </Box>
-
             </Stack>
         </Stack>
+
     );
 }
 

@@ -43,12 +43,12 @@ const userValues: TUser = {
     educationLabel: 'Education',
     educationValue: [
         {
-            date: '2016-2019',
+            date: '2016 - 2019',
             nameOrganization: 'STEP Computer Academy in Zaporizhia Region, Ukraine',
             description: 'Software development'
         },
         {
-            date: '2005-2010',
+            date: '2005 - 2010',
             nameOrganization: 'Kiev Institute of Business and Technology',
             description: ' Bachelor\'s degree, Business Management'
         }
@@ -70,6 +70,17 @@ const userValues: TUser = {
     workExperienceLabel: 'Work Experience',
     workExperienceValue: [
         {
+            date:'2024',
+            nameOrganization: 'freelance',
+            description: 'I work on various small projects with using React/Angular/Nest/Node'
+        },
+        {
+            date: '2023 - 2024',
+            nameOrganization: 'freelance',
+            description: 'Worked a front-end dev with using Angular.' +
+              'Updating version angular in four projects with 9/13/15 versions to 17. Refactoring and optimization code and styles after update'
+        },
+        {
             date: '2023',
             nameOrganization: 'freelance',
             description: 'Worked a front-end dev with using React Mui.' +
@@ -81,12 +92,12 @@ const userValues: TUser = {
                 ' Working on all components application, integrating google map and create custom layouts logic and element'
         },
         {
-            date: '2019-2023',
-            nameOrganization: 'freelance',
-            description: 'Creating Web and mobile applications with using javascript/typescript frameworks front and backends'
+            date: '2019 - 2022',
+            nameOrganization: 'TechJam',
+            description: 'Worked from an office in Zaporozhye. Creating Web and mobile applications with using javascript/typescript frameworks front and backends'
         },
         {
-            date: '2015-2019',
+            date: '2015 - 2019',
             nameOrganization: 'Zaporozhye Region, Ukraine, EpicentrK',
             description: 'Sales Assistent. Seller of non-food products. Acceptance, maintenance and' +
                 'arrangement of the products according to the planning schedule. Working' +
