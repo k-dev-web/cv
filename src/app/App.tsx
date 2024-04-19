@@ -15,7 +15,7 @@ export function App() {
 
     >
       <Stack width="40%"
-             height="inherit"
+             height="100vh"
              sx={{ background: 'linear-gradient(1deg, #778899, #9E9E9E)' }}
              padding="2%"
              alignItems="left"
@@ -27,7 +27,7 @@ export function App() {
           display="flex">
           <Avatar sx={{
             width: '100%',
-            height: '100vh',
+            height: 'auto',
             boxShadow: '0 4px 8px rgba(177 247 255 / 80%)',
           }}
                   src={avatar}
