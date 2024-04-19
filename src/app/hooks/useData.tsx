@@ -48,7 +48,7 @@ const userValues: TUser = {
       description: 'Software development',
     },
     {
-      date: '2005 - 2010',
+      date: '2010 - 2015',
       nameOrganization: 'Kiev Institute of Business and Technology',
       description: ' Bachelor\'s degree, Business Management',
     },
