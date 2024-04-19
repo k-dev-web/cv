@@ -4,9 +4,9 @@ const startCron = () => {
 
   setInterval(async () => {
       try {
-        console.log(await axios('https://cv-2023.onrender.com'));
+        await axios('https://cv-2023.onrender.com');
       } catch (e) {
-        console.log('tick');
+
       }
 
     },

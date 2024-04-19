@@ -27,7 +27,7 @@ export function App() {
           display="flex">
           <Avatar sx={{
             width: '100%',
-            height: 'auto',
+            height: '100vh',
             boxShadow: '0 4px 8px rgba(177 247 255 / 80%)',
           }}
                   src={avatar}
