@@ -14,8 +14,8 @@ export function App() {
       border="2px black"
 
     >
-      <Stack width="40%"
-             height="100vh"
+      <Stack width="30%"
+             height="inherit"
              sx={{ background: 'linear-gradient(1deg, #778899, #9E9E9E)' }}
              padding="2%"
              alignItems="left"
@@ -136,7 +136,7 @@ export function App() {
           </Stack>
         </Stack>
       </Stack>
-      <Stack width="60%"
+      <Stack width="70%"
              height="100%"
              padding="5%"
              gap={0.5}
